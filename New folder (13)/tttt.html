@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="j">
+        <div>
+            <div id="k"><h1>Rajat.</h1></div>
+        </div>
+        <div id="f">
+            <div><a href="#">Home</a></div>
+            <div><a href="About.html">About</a></div>
+            <div><a href="skills.html">Skills</a></div>
+            <div><a href="projects.html">Projects</a></div>
+        </div>
+    </div>
+
+    <div id="o">
+        <div class="kl">
+            <h1>Hi, I am Rajat Kumar Singh</h1>
+            <h2>FULL STACK WEB DEVELOPER</h2>
+            <h3>
+                Welcome to my portfolio! I’m a passionate web developer<br>
+                with a strong foundation in creating dynamic, responsive, and user<br>
+                -centric websites. Explore my work to see how I blend creativity and<br>
+                technology to build seamless digital experiences.
+            </h3>
+        </div>
+        <div id="po" class="kl">
+            <img src="1.jpeg" width="250px" height="280px">
+        </div>
+    </div>
+
+    
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <style>
+        body {
+            background-color: #081b29;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -150px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: bubble 20s infinite ease-in-out;
+            opacity: 0.5;
+        }
+
+        .bubble:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            left: 20%;
+            animation-duration: 25s;
+            animation-delay: 3s;
+        }
+
+        .bubble:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            left: 50%;
+            animation-duration: 30s;
+            animation-delay: 5s;
+        }
+
+        .bubble:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            left: 70%;
+            animation-duration: 22s;
+            animation-delay: 1s;
+        }
+
+        .bubble:nth-child(5) {
+            width: 70px;
+            height: 70px;
+            left: 90%;
+            animation-duration: 18s;
+            animation-delay: 7s;
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-500px) scale(1.1);
+            }
+            100% {
+                transform: translateY(-1000px) scale(1);
+                opacity: 0;
+            }
+        }
+
+       
+        #k {
+            margin-top: 10px;
+            margin-left: 80px;
+            color: white;
+            animation: slideInDown 1.5s ease-out;
+        }
+
+        .kl h1, .kl h2, .kl h3 {
+            color: white;
+            animation: slideInLeft 1.5s ease-out;
+        }
+
+        #po img {
+            animation: slideInRight 1.5s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        
+        a {
+            color: skyblue;
+            text-decoration: none;
+        }
+
+        #o {
+            display: flex;
+            background: transparent;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: aqua;
+        }
+
+        .kl {
+            margin-top: 280px;
+            margin-left: 50px;
+            color: white;
+        }
+
+        #f {
+            color: white;
+            display: flex;
+            gap: 30px;
+            margin-right: 200px;
+            margin-top: 20px;
+            background: transparent;
+        }
+
+        #j {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+</body>
+</html>
